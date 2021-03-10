@@ -1,0 +1,242 @@
+body{
+    background-color:black;
+    margin:0;
+    padding:0;
+}
+
+/*  header style */
+.navigation{
+    display:flex;
+    justify-content:space-between;
+    align-items:center; 
+    padding:0 80px;
+    height:100px;
+    margin-bottom:100px;
+}
+
+.logo{
+    height:50px;
+}
+
+.navigation-links{
+    display:flex;
+    padding:0;
+    margin:0;
+}
+
+.navigation-link{
+    margin-left: 40px;
+    list-style-type:none;
+    color:white;
+    font-family:'Lato', sans-serif;
+    font-size:20px;
+}
+
+.navigation-link a{
+    text-decoration:none;
+    color:rgba(255,255,255,0.6);
+}
+
+.navigation-link a:hover{
+    text-decoration:none;
+    color:white;
+}
+
+/* content style */
+section{
+    margin:0 80px;
+    min-height: 500px;
+}
+
+.content{
+    position:relative;
+    height:calc(100vh - 200px) !important;
+}
+
+.self-introduction{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    width:60%;
+    margin-top:calc(45vh - 200px);
+}
+
+.self-introduction h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    color:white;
+    margin:0;
+    padding:0;
+}
+
+.self-introduction p{
+    font-family:'Nunito', sans-serif;
+    font-size:20px;
+    word-wrap: break-word;
+    color:white;
+    font-weight:100;
+    margin:0;
+    padding:0;
+    margin-top:18px;
+}
+
+.content .myself{
+    position:absolute;
+    right:-80px;
+    height:100%;
+}
+
+.content .arrow{
+    position:absolute;
+    bottom:30px;
+    left:calc(50% - 25px);
+    width:50px;
+    transition-duration:0.1s;
+    transition-timing-function:ease;
+}
+
+.content .arrow:hover{
+    bottom:20px;
+}
+
+/* content-case-study style */
+.content-case-study{
+    margin-top:80px;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 50px; 
+    grid-template-areas:"case1 case1 case1 .  case2 case2 case2"
+                         ".  . case3 case3 case3 .  ." ;
+}
+
+#case1{
+    grid-area: case1;
+}
+
+#case2{
+    grid-area: case2;
+}
+
+#case3{
+    grid-area: case3;
+}
+
+.content-case-study .case-study{
+    text-align: center;
+}
+
+.content-case-study .case-study-img{
+    width: 100%;
+    max-height: 100%;
+}
+
+.content-case-study h3{
+    color:white;
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    margin:0;
+}
+
+.content-case-study p{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size:16px;
+    font-weight: 300;
+    margin:0;
+    margin-top:10px;
+}
+
+/* content-special style */
+.content-special{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.content-special h1{
+    color:white;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.content-special .content-special-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px; 
+    text-align: center;
+}
+
+.content-special .special .img-container{
+    width:100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-special .special .special-img{
+    height: 100%;
+    width: auto;
+
+}
+
+.content-special .special h2{
+    color:white;
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+}
+
+.content-special .special p{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Get in touch style */
+.get-in-touch{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    height:50vh;
+}
+
+.get-info{
+    text-align: center;
+}
+
+.left-hand, .right-hand{
+    width:350px;
+}
+
+.get-info h1{
+    color:white;
+    font-family: 'Lato', sans-serif;
+    font-size:40px;
+    margin:0;
+    padding:0;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    width: 223px;
+    margin-top: 30px;
+}
+
+/* Footer style */
+footer p{
+    padding-left:80px;
+    color:white;
+    font-family: 'Lato', sans-serif;
+    margin-bottom:20px;
+    font-weight: 200;
+}
