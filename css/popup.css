@@ -1,7 +1,7 @@
 body {font-family: 'Nunito', sans-serif}
 
 /* The Modal (background) */
-.modal {
+.popup {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -16,18 +16,18 @@ body {font-family: 'Nunito', sans-serif}
 }
 
 @media only screen and (max-width: 600px) {
-    .modal-content{
+    .popup-content{
         width: 60% !important;
     }
-    .modal-content p{
+    .popup-content p{
         font-size:16px !important;
     }
-    .modal-content .ok-button{
+    .popup-content .ok-button{
         font-size:16px !important;
 }
 
 /* Modal Content */
-.modal-content {
+.popup-content {
   display:flex;
   flex-direction:column;
   text-align:center;
@@ -41,16 +41,16 @@ body {font-family: 'Nunito', sans-serif}
   z-index:100;
 }
 
-.modal-content .check-circle{
+.popup-content .check-circle{
   height:48px;
   width:48px;
 
 }
 
-.modal-content p{
+.popup-content p{
     font-size:20px;
 }
-.modal-content .ok-button{
+.popup-content .ok-button{
     padding:10px 0;
     width:100%;
     max-width: 160px;
@@ -65,6 +65,6 @@ body {font-family: 'Nunito', sans-serif}
     outline: none;
 }
 
-.modal-content .ok-button:hover{
+.popup-content .ok-button:hover{
     background-color:#f7b62d;
 }

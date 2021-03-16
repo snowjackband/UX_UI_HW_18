@@ -88,22 +88,31 @@ section{
 .img-myself > .blue-eclipse{
     position:absolute;
     right: 200px;
-    animation: color-change1 10s infinite;
 
+}
+
+.blue-eclipse #Ellipse_1-2{
+    animation: color-change1 5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
 }
 
 .img-myself > .yellow-eclipse{
     position:absolute;
     right: 200px;
     top:350px;
-    animation: color-change2 10s infinite;
+}
+
+.yellow-eclipse #Path_10-2{
+     animation: color-change2 5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
 }
 
 .img-myself > .red-eclipse{
     position:absolute;
     right: 40px;
     top:160px;
-    animation: color-change3 infinite;
+}
+
+.red-eclipse #Path_227-2{
+    animation: color-change3 5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
 }
 
 .content .arrow{
@@ -133,7 +142,45 @@ section{
     }
 
     25%{
+        fill:#f7b62d;
+    }
+
+    50%{
         fill:#fe5621;
+    }
+
+
+    to{
+        fill:#144cdf;
+    }
+}
+
+@keyframes color-change2{
+    from{
+        fill:#f7b62d;
+    }
+
+    25%{
+        fill:#fe5621;
+    }
+
+    50%{
+        fill:#144cdf;
+    }
+
+
+    to{
+        fill:#f7b62d;
+    }
+}
+
+@keyframes color-change3{
+    from{
+        fill:#fe5621;
+    }
+
+    25%{
+        fill:#144cdf;
     }
 
     50%{
@@ -141,7 +188,7 @@ section{
     }
 
     to{
-        fill:#144cdf;
+        fill:#fe5621;
     }
 }
 
