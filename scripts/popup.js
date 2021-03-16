@@ -20,7 +20,6 @@ btn.onclick = function() {
 
 // When the user clicks on <span> (x), close the modal
 okBtn.onclick = function() {
-
   modal.style.display = "none";
 }
 

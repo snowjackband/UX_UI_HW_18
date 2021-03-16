@@ -78,10 +78,32 @@ section{
     margin-top:18px;
 }
 
-.content .myself{
+.img-myself > .myself{
     position:absolute;
     right:-80px;
     height:100%;
+    z-index: 10;
+}
+
+.img-myself > .blue-eclipse{
+    position:absolute;
+    right: 200px;
+    animation: color-change1 10s infinite;
+
+}
+
+.img-myself > .yellow-eclipse{
+    position:absolute;
+    right: 200px;
+    top:350px;
+    animation: color-change2 10s infinite;
+}
+
+.img-myself > .red-eclipse{
+    position:absolute;
+    right: 40px;
+    top:160px;
+    animation: color-change3 infinite;
 }
 
 .content .arrow{
@@ -102,6 +124,24 @@ section{
     }
 
     to{bottom:30px;
+    }
+}
+
+@keyframes color-change1{
+    from{
+        fill:#144cdf;
+    }
+
+    25%{
+        fill:#fe5621;
+    }
+
+    50%{
+        fill:#f7b62d;
+    }
+
+    to{
+        fill:#144cdf;
     }
 }
 
